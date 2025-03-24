@@ -1,0 +1,392 @@
+:root {
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Monteserrat,'Times New Roman', Times, serif;
+}
+
+.body{
+  margin: 40px 40px 40px 40px;
+}
+
+/*Classe Pai*/
+.container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;  
+  justify-content: center;
+}
+
+.container__img1{
+  position: absolute;
+  width: 100%; /*Pega 80% da tela*/
+  height: 550.81px; /*Altura fixa da imagem */
+  z-index: 1; /*Camadas - quanto maior ele está maior a camada*/
+}
+
+.container__img1 .img1{
+  width: 100%;
+  background-size: cover; /*Ajusta a imagem sem cortar*/
+  filter: brightness(20%); /*Deixa a imagem leve mente escura*/
+  height: 550.81px;
+}
+
+.container__box{  
+  z-index: 10;
+  position: relative;
+  height: 550.81px;
+  display: flex;
+  background-color: var(--primary-text-color);
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/*Configuração Textos principais*/
+.container__principal{
+  position: relative;
+  display: flex; 
+  flex-direction: column; /*Alinha em colunas*/
+  justify-content: center; /*Centralizar todos textos*/
+  width: 300px;
+}
+
+.container__title{
+  color: var(--primary);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.container__Subtitle{
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.title__data{
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.subtitle__data{
+  color: var(--primary);
+} 
+
+.container__formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--secondary); /* Fundo preto com 50% de transparência */
+  padding: 20px;  
+  width: 300px;
+  gap: 8px;
+}
+
+.container__forms{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.container__forms-input{
+  height: 25px; /*Altura input forms*/
+  border-radius: 4px; /*Aredondar lados*/
+}
+
+.form .btn{
+  display:flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 15px;
+  align-content: center;
+  width: 100%;
+  height: 35px;
+  background-color: var(--primary);
+  border: none;
+}
+
+.form .btn .btn__text{
+  align-self: center;
+  color: var(--text-color);
+  padding: 0;
+}
+
+.form .container__forms .form__label{
+  color: var(--text-tertiary);
+}
+
+/* O que você vai aprende */
+.container__aprender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background-color: var(--secondary);
+  height: 100px;
+  font-size: 22px;
+}
+
+/* Imagens aredondadas */
+.descricao{
+  margin-bottom: 1.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.descricao__primeira, 
+.descricao__segunda, 
+.descricao__terceira{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 210px;
+}
+
+.descricao__text{
+  width: 100%;
+  padding: 0;
+  color: var(--text-tertiary);
+  text-align: center;
+}
+
+.descricao .descricao__primeira img{
+  display: flex;
+  width: 150px;  /* Tamanho fixo para manter a proporção */
+  height: 150px; /* Deve ser igual à largura para ser circular */
+  object-fit: cover; /* Garante que a imagem preencha o círculo corretamente */
+  border-radius: 50%; /* Transforma em círculo */
+}
+
+.descricao .descricao__segunda img{
+  display: flex;
+  width: 150px;  /* Tamanho fixo para manter a proporção */
+  height: 150px; /* Deve ser igual à largura para ser circular */
+  object-fit: cover; /* Garante que a imagem preencha o círculo corretamente */
+  border-radius: 50%; /* Transforma em círculo */
+}
+
+.descricao .descricao__terceira img{
+  display: flex;
+  width: 150px;  /* Tamanho fixo para manter a proporção */
+  height: 150px; /* Deve ser igual à largura para ser circular */
+  object-fit: cover; /* Garante que a imagem preencha o círculo corretamente */
+  border-radius: 50%; /* Transforma em círculo */
+}
+
+/* Local de destaque */
+.local{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.local__img{
+  width: 100%;
+  position: absolute;
+}
+
+.local__img1{
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  filter: brightness(20%); /*Deixa a imagem leve mente escura*/
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.local__divs{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+   
+}
+
+.local .local__endereco{
+  color: var(--text-color);
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+  align-items: center;
+}
+
+.local__endereco__lista{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.local .local__destaque{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  gap: 30px;
+}
+
+.local__divs .localizacao{
+  width: 60px;
+  height: 60px;
+}
+
+.local__destaque h4{
+  color: var(--primary);
+  font-size: 30px;
+}
+
+.local__destaque p{
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+/* conheça os ambientes */
+.ambientes{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
+
+}
+
+.ambientes__img{
+  object-fit: cover;
+  height: 300px;
+  width: 500px;
+}
+
+.ambientes__text{
+  font-weight: 700;
+  font-size: 55px;
+  width: 540px;
+}
+
+
+/* Detalhes */
+.detalhes{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+}
+
+.detalhes__lista{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.detalhes__lista p{
+  font-size: 27px;
+}
+
+.detalhes__lista >li{
+  font-size: 24px;
+  padding-left: 8px;
+}
+
+.detalhes__img{
+  object-fit: cover;
+  height: 300px;
+  width: 500px;
+}
+
+
+/* Objetivos */
+.objetivos{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+}
+.objetivos__img{
+  object-fit: cover;
+  height: 300px;
+  width: 500px;
+}
+.objetivos__lista >li{
+  font-size: 24px;
+  padding-left: 8px;
+}
+
+.objetivos__lista p{
+  font-size: 27px;
+}
+
+/* Solicitar Inscrição */
+.solicitar{
+  display: flex;
+  position: relative;
+  width: 100%; 
+  justify-content: center;
+  align-items: center; 
+  margin-top: 80px;
+
+}
+
+.solicitar__img{
+  width: 100%;
+  position: absolute;
+}
+
+.solicitar__img1{
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  filter: brightness(20%); /*Deixa a imagem leve mente escura*/
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.solicitar__text{
+  font-size: 30px;
+  color: var(--text-color);
+  z-index: 10;
+}
+
+.solicitar__text .btn2{
+  display:flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 15px;
+  align-content: center;
+  width: 100%;
+  height: 35px;
+  border: none;
+}
+
+.solicitar__text .btn2__text{
+  align-self: center;
+  color: var(--text-secondary);
+  padding: 0;
+}
+
+.rodape{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  height: 35px;
+}
