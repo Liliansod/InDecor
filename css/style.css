@@ -383,10 +383,16 @@
   padding: 0;
 }
 
+.rodape__principal{
+    position: absolute;
+}
+
 .rodape{
+    position: absolute; 
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--secondary);
   height: 35px;
+    
 }
