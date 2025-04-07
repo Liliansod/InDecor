@@ -383,16 +383,16 @@
   padding: 0;
 }
 
-.rodape__principal{
-  position: absolute;
+/* Rodapé */
+.rodape{
+  margin-top: 80px;
 }
 
-.rodape{
-  position: absolute; 
+.container__rodape .rodape__principal{
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--secondary);
   height: 35px;
-    
+  flex-direction: column;
 }
