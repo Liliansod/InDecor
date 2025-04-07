@@ -384,11 +384,11 @@
 }
 
 .rodape__principal{
-    position: absolute;
+  position: absolute;
 }
 
 .rodape{
-    position: absolute; 
+  position: absolute; 
   display: flex;
   align-items: center;
   justify-content: center;
